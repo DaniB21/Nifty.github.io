@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initialscale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Paytone+One&family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+	<link href="styleCarrito.css" rel="stylesheet" type="text/css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<title>Carrito de Compras</title>
+</head>
+
+<body>
+	
+	<header>		
+			<div class="menu">	
+				<nav class="navbar navbar-expand-sm">
+				  <div class="container-fluid">
+					  <button id="backButton" onclick="goBack()"><i class="fa-solid fa-angle-left"></i></button>				  
+				  </div>				
+				</nav>	
+			</div>
+			
+		</header>
+	
+    <main>
+        <div class="product">
+          <img src="producto1.jpg" alt="Producto 1">
+            <div class="product-details">
+                <p class="product-title"><strong>Camisa Manga</strong></p>
+                <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.</p>
+          	</div>
+            <div class="product-actions">
+                <span class="product-number">1</span>
+                <button class="remove-button" onclick="removeProduct(1)">X</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="img/camisa_negra.jpeg" alt="Producto 2">
+          <div class="product-details">
+            <p class="product-title"><strong>Camisa Negra</strong></p>
+              <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.</p>
+            </div>
+            <div class="product-actions">
+                <span class="product-number">2</span>
+                <button class="remove-button" onclick="removeProduct(2)">X</button>
+            </div> 
+			
+		</div>
+
+        <p class="total">&nbsp;&nbsp;&nbsp;&nbsp;Total:&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;550 LPS</p>
+    </main>
+
+    <button id="checkoutButton">Efectuar compra</button>
+
+    <div class="sticky-bar">
+			<div class="icon">
+				<a href="#">
+					<i class="fa-solid fa-cart-shopping"></i>
+				</a>
+			</div>
+			<div class="icon">
+				<a href="#">
+					<i class="fa-solid fa-house"></i>
+				</a>
+			</div>
+			<div class="icon">
+				<a href="#">
+					<i class="fa-solid fa-map-location-dot"></i>
+				</a>
+			</div>
+			<div class="icon">
+				<a href="#">
+					<i class="fa-solid fa-circle-user"></i>
+				</a>
+			</div>
+		</div>
+
+	
+</body>
+</html>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/e073a9035e.js" crossorigin="anonymous"></script>

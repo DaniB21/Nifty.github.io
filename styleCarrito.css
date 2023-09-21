@@ -1,0 +1,219 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color: #FFFFFF;
+	width: 100%;
+	height: 100%;
+	font-family: "Poppins" !important; 
+	font-size: 14px;
+}
+
+header {
+	background-color: #FFFFFF;
+	padding: 10px;
+}
+
+.menu {
+	margin: none;
+}
+
+nav {
+	display: flex;
+	list-style: none;
+	width: 100%;
+}
+
+.navbar-brand {
+	color: #0097a7 !important;
+	font-family: 'Paytone One', sans-serif;
+	font-weight: 400;
+	font-size: 28px !important;
+	float: right;
+}
+
+.collapse ul {
+	padding-top: 20px;
+}
+
+#collapsibleNavbar {
+	widows: auto !important;
+}
+
+nav li {
+	margin: 0px 5px;
+	list-style-type: none;
+	float: left;
+}
+
+.search-container {
+	display: flex;
+	position: relative;
+}
+
+input[type="text"] {
+	width: 80%;
+	margin: 0px 10px;
+	border: none;
+	background-color: transparent;
+	height: 50px;
+	z-index: 1;
+}
+
+#search-button {
+	border: none;
+	width: 100%;
+	position: absolute;
+	color: #000000;
+	background-color: #E8E8E8;	
+	text-align: right;
+	border-radius: 15px;
+	height: 50px;
+}
+
+#search-button i {
+	margin:0px 15px;
+	padding: 0px;
+}
+
+#search-button:hover {
+	color: #3B3B3B;
+}
+
+/* Estilos para el botón de retroceso */
+#backButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: black;
+}
+
+/* Estilos de productos */
+.product {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.product img {
+    border-radius: 20px;
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+.product-details {
+    flex-grow: 1;
+}
+
+.product-title {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.product-description {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+}
+
+.product-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.product-number {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.remove-button {
+    background-color: transparent;
+    color: blue;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+}
+
+/* Estilos para el texto "Total" */
+.total {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal; 
+    font-size: 18px;
+}
+
+a {
+	text-decoration: none !important;
+	color:#000000 !important;
+}
+
+a:hover {
+	color:#0097a7 !important;
+}
+
+.sticky-bar {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: #FFFFFF;
+	padding: 10px 0;
+	display: flex;
+	justify-content: space-between;
+	color: #000000;
+	font-size: 24px;
+}
+
+.fa-cart-shopping{
+	color:#0097a7 !important;
+}
+
+i {
+	margin:  15px 30px;
+	font-size: 28px;
+}
+
+.center-icon {
+	flex-grow: 1;
+	text-align: center;
+	color: #0097a7;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+	.menu-icon {
+		display: block;
+		float: right;
+		position: absolute;
+	}
+	
+	nav {
+		display: none;
+		flex-direction: column;
+		background-color: #FFFFFF;
+		position: absolute;
+		width: 100%;
+	}
+	
+	nav.active {
+		display: flex;
+		float: right;
+		position: absolute;
+	}
+	
+	.categories {
+		display: flex;
+		flex-wrap: wrap;
+		text-align: center;
+		justify-content: center;
+		width: 100%;
+		margin:auto;
+	}
+	
+	.fa-cart-shopping{
+	color:#0097a7 !important;
+	}
+}
